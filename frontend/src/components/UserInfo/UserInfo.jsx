@@ -59,8 +59,8 @@ const UserInfo = () => {
             justifyContent: "center",
             flexDirection: "column",
             alignItems: "center",
-            marginTop: "15%",
-            height: "100%",
+            marginTop: "1.5%",
+           
           }}
         >
           <img
