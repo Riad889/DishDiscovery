@@ -50,7 +50,7 @@ const CartPage = () => {
   const confirmOrder = async (orderData) => {
     try {
       const result = await axios.post(
-        "http://localhost:8000/order",
+        "https://dish-discovery-backend-red.vercel.app/order",
 
         orderData
       );

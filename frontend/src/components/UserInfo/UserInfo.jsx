@@ -14,7 +14,7 @@ const UserInfo = () => {
   const getUser = async () => {
     try {
       if (LocalUser) {
-        const result = await axios.get("http://localhost:8000/getuser", {
+        const result = await axios.get("https://dish-discovery-backend-red.vercel.app/getuser", {
           params: {
             user_email: LocalUser.email,
           },
@@ -31,7 +31,7 @@ const UserInfo = () => {
 
   const getAllOrders = async () => {
     try {
-      const result = await axios.get("http://localhost:8000/getallorders", {
+      const result = await axios.get("https://dish-discovery-backend-red.vercel.app/getallorders", {
         params: {
           user_email: LocalUser.email,
         },
@@ -49,7 +49,7 @@ const UserInfo = () => {
   const gotoVideos = () => {
     navigate("/videos");
   };
-  console.log("order data : ", orderData);
+  //console.log("order data : ", orderData);
   return (
     <>
       {user && (

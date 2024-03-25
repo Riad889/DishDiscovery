@@ -34,13 +34,13 @@ const Subscription = () => {
           currentDate.getDate()
         );
       }
-      const result = await axios.post("http://localhost:8000/subscription", {
+      const result = await axios.post("https://dish-discovery-backend-red.vercel.app/subscription", {
         user_email: user.email,
         subscriptionPrice: basicSub,
         subscriptionStart: currentDate,
         subscriptionEnd: SubscriptionEnd,
       });
-      console.log("subscription Result : ",result)
+     // console.log("subscription Result : ",result)
       const data = result.data;
       return data;
     } catch (error) {

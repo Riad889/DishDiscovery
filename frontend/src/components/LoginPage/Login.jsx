@@ -40,7 +40,7 @@ const Login = () => {
   const SendUserInfoToServer = async (datas) => {
     // console.log(datas)
     try {
-      const res = await axios.post("http://localhost:8000/adduser", {
+      const res = await axios.post("https://dish-discovery-backend-red.vercel.app/adduser", {
         user_name: datas.name,
         user_email: datas.email,
         user_pic: datas.picture,

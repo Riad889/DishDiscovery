@@ -13,7 +13,7 @@ const VideoPage = () => {
   const getUserData = async () => {
     try {
       if (user) {
-        const result = await axios.get("http://localhost:8000/getuser", {
+        const result = await axios.get("https://dish-discovery-backend-red.vercel.app/getuser", {
           params: {
             user_email: user.email,
           },
@@ -57,7 +57,7 @@ const VideoPage = () => {
         navigate('/login')
     }
   }, []);
-  console.log("has subscription : ", hasSubscription);
+  //console.log("has subscription : ", hasSubscription);
   return (
     <>
       {hasSubscription ? (

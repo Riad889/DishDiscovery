@@ -11,7 +11,7 @@ const Dinner = (sortBy) => {
   const sendRequest = async () => {
     if (sortValue === "default") {
       try {
-        const res = await axios.get("http://localhost:8000/dinner");
+        const res = await axios.get("https://dish-discovery-backend-red.vercel.app/dinner");
         const data = res.data;
         return data;
       } catch (error) {
@@ -19,7 +19,7 @@ const Dinner = (sortBy) => {
       }
     } else if (sortValue === "highTolow") {
       try {
-        const res = await axios.get("http://localhost:8000/dinner/highTolow");
+        const res = await axios.get("https://dish-discovery-backend-red.vercel.app/dinner/highTolow");
         const data = res.data;
         return data;
       } catch (error) {
@@ -27,7 +27,7 @@ const Dinner = (sortBy) => {
       }
     } else if (sortValue === "lowTohigh") {
       try {
-        const res = await axios.get("http://localhost:8000/dinner/lowTohigh");
+        const res = await axios.get("https://dish-discovery-backend-red.vercel.app/dinner/lowTohigh");
         const data = res.data;
         return data;
       } catch (error) {

@@ -11,7 +11,7 @@ const Launch = (sortBy) => {
   const sendRequest = async () => {
     if (sortValue === "default") {
       try {
-        const res = await axios.get("http://localhost:8000/launch");
+        const res = await axios.get("https://dish-discovery-backend-red.vercel.app/launch");
         const data = res.data;
         return data;
       } catch (error) {
@@ -20,7 +20,7 @@ const Launch = (sortBy) => {
     } else if (sortValue === "highTolow") {
       try {
         const res = await axios.get(
-          "http://localhost:8000/launch/highTolow"
+          "https://dish-discovery-backend-red.vercel.app/launch/highTolow"
         );
         const data = res.data;
         return data;
@@ -30,7 +30,7 @@ const Launch = (sortBy) => {
     } else if (sortValue === "lowTohigh") {
       try {
         const res = await axios.get(
-          "http://localhost:8000/launch/lowTohigh"
+          "https://dish-discovery-backend-red.vercel.app/launch/lowTohigh"
         );
         const data = res.data;
         return data;
