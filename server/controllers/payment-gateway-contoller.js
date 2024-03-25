@@ -75,7 +75,7 @@ const trans_success_Controller = async (req, res) => {
         try {
             await existingUser.save();
             // console.log("Order ID added to previous orders:", result._id);
-            res.redirect('http://localhost:3000/thankyou');
+            res.redirect('https://dish-discovery-react-app.netlify.app/thankyou');
         } catch (error) {
             // console.error("Error updating user:", error);
         }
