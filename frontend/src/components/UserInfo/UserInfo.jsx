@@ -59,7 +59,7 @@ const UserInfo = () => {
             justifyContent: "center",
             flexDirection: "column",
             alignItems: "center",
-            marginTop: "5%",
+            marginTop: "15%",
             height: "100%",
           }}
         >
