@@ -14,7 +14,7 @@ const SubscriptionController = async (req, res) => {
     total_amount: subscriptionPrice,
     currency: "BDT",
     tran_id: tran_id, // use unique tran_id for each api call
-    success_url: "http://localhost:8000/SubscriptionSuccess",
+    success_url: "https://dish-discovery-backend-red.vercel.app/SubscriptionSuccess",
     fail_url: "http://localhost:3030/fail",
     cancel_url: "http://localhost:3030/cancel",
     ipn_url: "http://localhost:3030/ipn",
@@ -66,7 +66,7 @@ const Trans_Subcription_Success_Controller = async (req, res) => {
           },
         } // Update fields
       );
-      res.redirect("http://localhost:3000/userinfo");
+      res.redirect("https://dish-discovery-react-app.netlify.app/userinfo");
     }
   } catch (error) {
     console.log(error);
